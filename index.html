@@ -1,31 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marcelo Cartagena - Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Marcelo Cartagena Orellana</h1>
-        <img src="./assets/images/mcartagena-perfil.jpeg" height="200" alt="Software Development Project"/>
-        <nav>
-            <ul>
-                <li><a href="public/about.html">About Me</a></li>
-                <li><a href="public/experience.html">Work Experience</a></li>
-                <li><a href="public/skills.html">Skills</a></li>
-                <li><a href="public/education.html">Education & Certifications</a></li>
-                <li><a href="public/hobbies.html">My Hobbbies</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="public/experience.html" class="nav-link">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="public/skills.html" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="public/education.html" class="nav-link"
+            >Education & Certifications</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="public/hobbies.html" class="nav-link">My Hobbbies</a>
+        </li>
+        <li class="nav-item">
+          <a href="public/about.html" class="nav-link">About Me</a>
+        </li>
+      </ul>
     </header>
-    <main>
-        <h2>Welcome to My Professional Resume Website</h2>
-        <p>Explore my skills, experience, and achievements as a seasoned Software Engineer.</p>
-    </main>
-    <footer>
-        <p>Contact: marcelocartagenaorellana@gmail.com | Phone: +56 9 98186938</p>
-    </footer>
-</body>
+
+    <section id="cover" class="gradient-background">
+      <div class="hero">
+        <lottie-player
+          src="./assets/animations/space.json"
+          background="transparent"
+          speed="0.3"
+          style="width: 100%; height: 100%"
+          loop
+          controls
+          autoplay
+        ></lottie-player>
+      </div>
+      <div
+        class="container herotext position-absolute top-50 start-50 translate-middle"
+      >
+        <h1 class="display-4 fw-bold text-body-emphasis heading">
+          Hi, my name is<br />Marcelo Cartagena
+        </h1>
+        <img
+          src="./assets/images/mcartagena-perfil.jpeg"
+          class="circle-image"
+          alt="Marcelo picture"
+        />
+        <h3>Welcome to My Professional Resume Website</h3>
+        <p class="lead mb-4">
+          Explore my skills, experience, and achievements as a seasoned Full
+          Stack Developer & Solution Architect.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2025</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="https://www.instagram.com/marchelo6308/" aria-label="Instagram"
+              ><svg class="bi" width="24" height="24" aria-hidden="true">
+                <i class="bi bi-instagram"></i></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="https://www.facebook.com/marcelo.cartagena.37" aria-label="Facebook"
+              ><svg class="bi" width="24" height="24">
+                <i class="bi bi-facebook"></i></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,35 @@
+.gradient-background {
+    background: linear-gradient(300deg, #A0E9FF, #89CFF3, #00A9FF);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+#cover {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero {
+    height: 85vh;
+}
+
+lottie-player {
+    --lottie-player-toolbar-height: 0;
+    --lottie-player-toolbar-background-color: none;
+    --lottie-player-toolbar-icon-color: none;
+    --lottie-player-toolbar-icon-hover-color: none;
+    --lottie-player-toolbar-icon-active-color: none;
+    --lottie-player-seeker-track-color: none;
+    --lottie-player-seeker-thumb-color: none;
+    filter: sepia(100%) saturate(500%) hue-rotate(10deg) brightness(120%);
+}
+
+.circle-image {
+    width: 200px; /* Set width */
+    height: 200px; /* Set height */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid black; /* Adds a black border */
+    object-fit: cover; /* Ensures the image fills the circular space */
+}
+
+
