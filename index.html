@@ -18,32 +18,46 @@
     />
   </head>
   <body>
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="public/experience.html" class="nav-link">Work Experience</a>
-        </li>
-        <li class="nav-item">
-          <a href="public/skills.html" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="public/education.html" class="nav-link"
-            >Education & Certifications</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="public/hobbies.html" class="nav-link">My Hobbbies</a>
-        </li>
-        <li class="nav-item">
-          <a href="public/about.html" class="nav-link">About Me</a>
-        </li>
-      </ul>
-    </header>
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-primary active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="public/experience.html" class="nav-link text-primary"
+                >Work Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="public/skills.html" class="nav-link text-primary">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="public/education.html" class="nav-link text-primary"
+                >Education & Certifications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="public/hobbies.html" class="nav-link text-primary">My Hobbbies</a>
+            </li>
+            <li class="nav-item">
+              <a href="public/about.html" class="nav-link text-primary">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <section id="cover" class="gradient-background">
+    <section id="home" class="container gradient-background">
       <div class="hero">
         <lottie-player
           src="./assets/animations/space.json"
@@ -56,7 +70,7 @@
         ></lottie-player>
       </div>
       <div
-        class="container herotext position-absolute top-50 start-50 translate-middle"
+        class="herotext position-absolute top-50 start-50 translate-middle"
       >
         <h1 class="display-4 fw-bold text-body-emphasis heading">
           Hi, my name is<br />Marcelo Cartagena
@@ -82,17 +96,25 @@
           <span class="mb-3 mb-md-0 text-body-secondary">© 2025</span>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-            <p>Contact: marcelocartagenaorellana@gmail.com | Phone: +56 9 98186938</p>
-        </div>        
+          <p>
+            Contact: marcelocartagenaorellana@gmail.com | Phone: +56 9 98186938
+          </p>
+        </div>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3">
-            <a class="text-body-secondary" href="https://www.instagram.com/marchelo6308/" aria-label="Instagram"
+            <a
+              class="text-body-secondary"
+              href="https://www.instagram.com/marchelo6308/"
+              aria-label="Instagram"
               ><svg class="bi" width="24" height="24" aria-hidden="true">
                 <i class="bi bi-instagram"></i></svg
             ></a>
           </li>
           <li class="ms-3">
-            <a class="text-body-secondary" href="https://www.facebook.com/marcelo.cartagena.37" aria-label="Facebook"
+            <a
+              class="text-body-secondary"
+              href="https://www.facebook.com/marcelo.cartagena.37"
+              aria-label="Facebook"
               ><svg class="bi" width="24" height="24">
                 <i class="bi bi-facebook"></i></svg
             ></a>
@@ -100,5 +122,11 @@
         </ul>
       </footer>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -4,13 +4,22 @@
     animation: gradient-animation 18s ease infinite;
 }
 
-#cover {
-    margin: 0 auto;
-    text-align: center;
+#home {
+    width: 100%;
+    min-height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    flex-direction: column; /* Stacks content */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centers text */
+    padding: 20px;
+    position: relative;
 }
 
+
 .hero {
-    height: 85vh;
+    width: 100%;
+    max-width: 600px; /* Prevents excessive resizing */
 }
 
 lottie-player {
@@ -25,11 +34,30 @@ lottie-player {
 }
 
 .circle-image {
-    width: 200px; /* Set width */
-    height: 200px; /* Set height */
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    max-width: 100%;
     border-radius: 50%; /* Makes the image circular */
     border: 5px solid black; /* Adds a black border */
     object-fit: cover; /* Ensures the image fills the circular space */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-pills {
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center;
+}
+
+.nav-link.active {
+    background-color: #007bff !important; /* Blue background */
+    color: white !important; /* White text */
+    border-radius: 10%;
 }
 
 
