@@ -14,8 +14,8 @@
     text-align: center; /* Centers text */
     padding: 20px;
     position: relative;
+    color: white;
 }
-
 
 .hero {
     width: 100%;
@@ -38,7 +38,7 @@ lottie-player {
     height: 150px; /* Set height */
     max-width: 100%;
     border-radius: 50%; /* Makes the image circular */
-    border: 5px solid black; /* Adds a black border */
+    border: 5px solid white; /* Adds a black border */
     object-fit: cover; /* Ensures the image fills the circular space */
 }
 
@@ -60,4 +60,6 @@ header {
     border-radius: 10%;
 }
 
-
+#portfolio {
+    margin: 0 auto;
+}
