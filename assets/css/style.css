@@ -61,5 +61,15 @@ header {
 }
 
 #portfolio {
+    color: #00A9FF;
+    background-color: #CDF5FD;
     margin: 0 auto;
 }
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; /* Ensures full visibility of images */
+    background-color: transparent;
+}
+

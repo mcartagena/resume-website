@@ -1,61 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobbies</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>My Hobbies</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="experience.html">Work Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="education.html">Education & Certifications</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Soccer</h2>
-            <p>I love playing soccer—it’s a great way to stay active and collaborate with friends as part of a team.</p>
-            <<img src="../assets/images/soccer-1.png" height="80" alt="Soccer"/>
-            <<img src="../assets/images/soccer-2.png" height="80" alt="Soccer"/>
-            <<img src="../assets/images/soccer-3.png" height="80" alt="Soccer"/>
-        </section>
-        <section>
-            <h2>Climbing</h2>
-            <p>Climbing challenges both my mind and body, and I enjoy exploring new heights and overcoming obstacles.</p>
-            <<img src="../assets/images/climb-1.png" height="80" alt="Climbing"/>
-        </section>
-        <section>
-            <h2>Running</h2>
-            <p>Running helps me stay fit and provides an opportunity for mindfulness and reflection.</p>
-            <<img src="../assets/images/running-1.png" height="80" alt="Running"/>
-            <<img src="../assets/images/running-2.png" height="80" alt="Running"/>
-        </section>
-        <section>
-            <h2>Reading</h2>
-            <p>I’m an avid reader who enjoys diving into books that expand my knowledge and imagination.</p>
-            <<img src="../assets/images/book-1.png" height="80" alt="Reading"/>
-            <<img src="../assets/images/book-2.png" height="80" alt="Reading"/>
-            <<img src="../assets/images/book-3.png" height="80" alt="Reading"/>
-            <<img src="../assets/images/book-4.png" height="80" alt="Reading"/>
-        </section>
-        <section>
-            <h2>Being a Dad</h2>
-            <p>Parenthood is one of the most fulfilling parts of my life. Spending quality time with my family brings me endless joy and perspective.</p>
-            <<img src="../assets/images/dad-1.png" height="80" alt="Dad"/>
-            <<img src="../assets/images/dad-2.png" height="80" alt="Dad"/>
-            <<img src="../assets/images/dad-3.png" height="80" alt="Dad"/>
-        </section>
-    </main>
-    <footer>
-        <p>Contact: marcelocartagenaorellana@gmail.com | Phone: +56 9 98186938</p>
-    </footer>
-</body>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link text-primary">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="../public/experience.html"
+                class="nav-link text-primary"
+                aria-current="page"
+                >Work Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../public/skills.html" class="nav-link text-primary"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../public/education.html" class="nav-link text-primary"
+                >Education & Certifications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="../public/hobbies.html"
+                class="nav-link text-primary active"
+                >My Hobbbies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../public/about.html" class="nav-link text-primary"
+                >About Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="portfolio">
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+            <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="9"
+            aria-label="Slide 10"
+          ></button>
+          <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="10"
+          aria-label="Slide 11"
+        ></button>
+        <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="11"
+        aria-label="Slide 12"
+      ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="12"
+      aria-label="Slide 13"
+    ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../assets/images/soccer-1.png"
+                class="d-block w-100"
+                alt="Soccer 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Soccer</h5>
+                <p>When I was young.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/soccer-2.png"
+                class="d-block w-100"
+                alt="Soccer 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Soccer</h5>
+                <p>Playing with partners.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/soccer-3.png"
+                class="d-block w-100"
+                alt="Soccer 3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Soccer</h5>
+                <p>Playing with friends.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/climb-1.png"
+                class="d-block w-100"
+                alt="Climbing 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Climbing</h5>
+                <p>Enjoying nature</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/running-1.png"
+                class="d-block w-100"
+                alt="Climbing 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Running</h5>
+                <p>With friends</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/running-2.png"
+                class="d-block w-100"
+                alt="Climbing 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Running</h5>
+                <p>Challenge in Argentina</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/dad-1.png"
+                class="d-block w-100"
+                alt="Climbing 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Being a Dad</h5>
+                <p>With my girls</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/dad-2.png"
+                class="d-block w-100"
+                alt="Climbing 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Being a Dad</h5>
+                <p>Birth of my daughter</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/dad-3.png"
+                class="d-block w-100"
+                alt="Climbing 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Being a Dad</h5>
+                <p>Vacation</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/book-1.png"
+              class="d-block w-100"
+              alt="book 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reading</h5>
+              <p>Ego is the Enemy</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/book-2.png"
+              class="d-block w-100"
+              alt="book 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reading</h5>
+              <p>Limitless</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/book-3.png"
+              class="d-block w-100"
+              alt="book 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reading</h5>
+              <p>The Lord of the Rings</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/book-4.png"
+              class="d-block w-100"
+              alt="book 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reading</h5>
+              <p>Doctor Sleep</p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <!-- Soccer -->
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                      </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Soccer</h3>
+                    <p>I love playing soccer—it’s a great way to stay active and collaborate with friends as part of a team.</p>                    
+                </div>
+            </div>
+        
+            <!-- Climbing -->
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                      </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Climbing</h3>
+                    <p>Exploring nature through climbing provides a great mental and physical challenge.</p>                    
+                </div>
+            </div>
+        
+            <!-- Running -->
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                      </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Running</h3>
+                    <p>Running helps build endurance while providing the freedom to explore new places.</p>                    
+                </div>
+            </div>
+        
+            <!-- Feature 4: Reading -->
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                      </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Reading</h3>
+                    <p>Reading allows me to explore new ideas, gain knowledge, and relax in my free time.</p>                    
+                </div>
+            </div>
+        
+            <!-- Feature 5: Family Time -->
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                      </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Being a Dad</h3>
+                    <p>Parenthood is one of the most fulfilling parts of my life. Spending quality time with my family brings me endless joy and perspective.</p>                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top"
+      >
+        <div class="col-md-2 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2025</span>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <p>
+            Contact: marcelocartagenaorellana@gmail.com | Phone: +56 9 98186938
+          </p>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.instagram.com/marchelo6308/"
+              aria-label="Instagram"
+              ><svg class="bi" width="24" height="24" aria-hidden="true">
+                <i class="bi bi-instagram"></i></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.facebook.com/marcelo.cartagena.37"
+              aria-label="Facebook"
+              ><svg class="bi" width="24" height="24">
+                <i class="bi bi-facebook"></i></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
