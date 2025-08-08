@@ -17,8 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
-  <body>
-    <nav class="navbar sticky-top navbar-expand-lg">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -68,74 +68,76 @@
       </div>
     </nav>
 
-    <section id="home" class="container gradient-background">
-      <div class="hero">
-        <lottie-player
-          src="./assets/animations/space.json"
-          background="transparent"
-          speed="0.3"
-          style="width: 100%; height: 100%"
-          loop
-          controls
-          autoplay
-        ></lottie-player>
-      </div>
-      <div class="herotext position-absolute top-50 start-50 translate-middle">
-        <h1 class="display-4 fw-bold heading">
-          Hi, my name is<br />Marcelo Cartagena
-        </h1>
-        <img
-          src="./assets/images/mcartagena-perfil.jpeg"
-          class="circle-image"
-          alt="Marcelo picture"
-        />
-        <h3>Welcome to My Professional Resume Website</h3>
-        <p class="lead mb-4">
-          Explore my skills, experience, and achievements as a seasoned Full
-          Stack Developer & Solution Architect.
-        </p>
-      </div>
-    </section>
-
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top"
-      >
-        <div class="col-md-2 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2025</span>
+    <main class="flex-fill d-flex flex-column">
+      <section id="home" class="container gradient-background d-flex align-items-center justify-content-center flex-grow-1 position-relative p-0" style="min-height: 400px;">
+        <div class="hero">
+          <lottie-player
+            src="./assets/animations/space.json"
+            background="transparent"
+            speed="0.3"
+            style="width: 100%; height: 100%"
+            loop
+            controls
+            autoplay
+          ></lottie-player>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
-          <p>
-            Contact:
-            <a
-              class="text-body-secondary"
-              href="https://www.upwork.com/freelancers/~017fdcfbf20eecd296?mp_source=share"
-              >Upworks</a
-            >
+        <div class="herotext position-absolute top-50 start-50 translate-middle">
+          <h1 class="display-4 fw-bold heading">
+            Hi, my name is<br />Marcelo Cartagena
+          </h1>
+          <img
+            src="./assets/images/mcartagena-perfil.jpeg"
+            class="circle-image"
+            alt="Marcelo picture"
+          />
+          <h3>Welcome to My Professional Resume Website</h3>
+          <p class="lead mb-4">
+            Explore my skills, experience, and achievements as a seasoned Full
+            Stack Developer & Solution Architect.
           </p>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a
-              class="text-body-secondary"
-              href="https://www.instagram.com/marchelo6308/"
-              aria-label="Instagram"
-              ><svg class="bi" width="24" height="24" aria-hidden="true">
-                <i class="bi bi-instagram"></i></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a
-              class="text-body-secondary"
-              href="https://www.facebook.com/marcelo.cartagena.37"
-              aria-label="Facebook"
-              ><svg class="bi" width="24" height="24">
-                <i class="bi bi-facebook"></i></svg
-            ></a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <footer class="mt-auto">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top">
+          <div class="col-md-2 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2025</span>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <p>
+              Contact:
+              <a
+                class="text-body-secondary"
+                href="https://www.upwork.com/freelancers/~017fdcfbf20eecd296?mp_source=share"
+                >Upworks</a
+              >
+            </p>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.instagram.com/marchelo6308/"
+                aria-label="Instagram"
+                ><svg class="bi" width="24" height="24" aria-hidden="true">
+                  <i class="bi bi-instagram"></i></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.facebook.com/marcelo.cartagena.37"
+                aria-label="Facebook"
+                ><svg class="bi" width="24" height="24">
+                  <i class="bi bi-facebook"></i></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

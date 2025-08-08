@@ -16,8 +16,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
-  <body>
-    <nav class="navbar sticky-top navbar-expand-lg">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -66,123 +66,125 @@
         </div>
       </div>
     </nav>
-    <section id="portfolio" style="height: 100vh">
-      <div class="container w-80 marketing my-2 p-3">
-        <div class="my-2 pb-2 text-center">
-          <h2 class="display-4">Education & Certifications</h2>
-        </div>
-        <div class="row featurette mb-4 px-4 align-items-center">
-          <div class="col-md-6">
-            <h2 class="featurette-heading fw-normal lh-1">Education</h2>
-            <ul>
-              <li>MBA in Finance, Universidad de Chile (2002-2003)</li>
-              <li>
-                Software Engineer, Escuela Politécnica Nacional (1990-1998)
-              </li>
-            </ul>
+    <main class="flex-fill d-flex flex-column">
+      <section id="portfolio" class="flex-grow-1 d-flex align-items-center" style="min-height: 400px;">
+        <div class="container w-80 marketing my-2 p-3">
+          <div class="my-2 pb-2 text-center">
+            <h2 class="display-4">Education & Certifications</h2>
+          </div>
+          <div class="row featurette mb-4 px-4 align-items-center">
+            <div class="col-md-6">
+              <h2 class="featurette-heading fw-normal lh-1">Education</h2>
+              <ul>
+                <li>MBA in Finance, Universidad de Chile (2002-2003)</li>
+                <li>
+                  Software Engineer, Escuela Politécnica Nacional (1990-1998)
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 text-center align-items-center">
+              <img
+                class="object-fit-cover img-fluid rounded-4"
+                src="../assets/images/logo-uchile.jpg"
+                width="100"
+                height="100"
+                alt="UChile Logo"
+              />
+              <img
+                class="object-fit-cover img-fluid rounded-4"
+                src="../assets/images/logo-EPN-FIS.png"
+                width="100"
+                height="100"
+                alt="EPN Logo"
+              />
+            </div>
           </div>
 
-          <div class="col-md-6 text-center align-items-center">
-            <img
-              class="object-fit-cover img-fluid rounded-4"
-              src="../assets/images/logo-uchile.jpg"
-              width="100"
-              height="100"
-              alt="UChile Logo"
-            />
-            <img
-              class="object-fit-cover img-fluid rounded-4"
-              src="../assets/images/logo-EPN-FIS.png"
-              width="100"
-              height="100"
-              alt="EPN Logo"
-            />
+          <div class="row featurette mb-4 px-4 align-items-center">
+            <div class="col-md-6">
+              <h2 class="featurette-heading fw-normal lh-1">Certifications</h2>
+              <ul>
+                <li>AWS Solution Architect</li>
+                <li>Introduction to Kubernetes</li>
+                <li>Architecting Microsoft Azure Solutions</li>
+                <li>Oracle SOA Suite 11g Specialist</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                class="object-fit-cover img-fluid rounded-4"
+                src="../assets/images/Aws-01.svg"
+                width="100"
+                height="100"
+                alt="Cloud website"
+              />
+              <img
+                class="object-fit-cover img-fluid rounded-4"
+                src="../assets/images/icons8-kubernetes.svg"
+                width="100"
+                height="100"
+                alt="DevOps Logo"
+              />
+              <img
+                class="object-fit-cover img-fluid rounded-4"
+                src="../assets/images/microsoft-azure.svg"
+                width="100"
+                height="100"
+                alt="Cloud website"
+              />
+              <img
+                class="object-fit-cover img-fluid rounded-4"
+                src="../assets/images/Service-Oriented-Architecture-600x294.png"
+                width="100"
+                height="100"
+                alt="Other Logo"
+              />
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="row featurette mb-4 px-4 align-items-center">
-          <div class="col-md-6">
-            <h2 class="featurette-heading fw-normal lh-1">Certifications</h2>
-            <ul>
-              <li>AWS Solution Architect</li>
-              <li>Introduction to Kubernetes</li>
-              <li>Architecting Microsoft Azure Solutions</li>
-              <li>Oracle SOA Suite 11g Specialist</li>
-            </ul>
+    <footer class="mt-auto">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top">
+          <div class="col-md-2 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2025</span>
           </div>
-          <div class="col-md-6 text-center">
-            <img
-              class="object-fit-cover img-fluid rounded-4"
-              src="../assets/images/Aws-01.svg"
-              width="100"
-              height="100"
-              alt="Cloud website"
-            />
-            <img
-              class="object-fit-cover img-fluid rounded-4"
-              src="../assets/images/icons8-kubernetes.svg"
-              width="100"
-              height="100"
-              alt="DevOps Logo"
-            />
-            <img
-              class="object-fit-cover img-fluid rounded-4"
-              src="../assets/images/microsoft-azure.svg"
-              width="100"
-              height="100"
-              alt="Cloud website"
-            />
-            <img
-              class="object-fit-cover img-fluid rounded-4"
-              src="../assets/images/Service-Oriented-Architecture-600x294.png"
-              width="100"
-              height="100"
-              alt="Other Logo"
-            />
+          <div class="col-md-6 d-flex justify-content-center">
+            <p>
+              Contact:
+              <a
+                class="text-body-secondary"
+                href="https://www.upwork.com/freelancers/~017fdcfbf20eecd296?mp_source=share"
+                >Upworks</a
+              >
+            </p>
           </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.instagram.com/marchelo6308/"
+                aria-label="Instagram"
+                ><svg class="bi" width="24" height="24" aria-hidden="true">
+                  <i class="bi bi-instagram"></i></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.facebook.com/marcelo.cartagena.37"
+                aria-label="Facebook"
+                ><svg class="bi" width="24" height="24">
+                  <i class="bi bi-facebook"></i></svg
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top"
-      >
-        <div class="col-md-2 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2025</span>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center">
-          <p>
-            Contact:
-            <a
-              class="text-body-secondary"
-              href="https://www.upwork.com/freelancers/~017fdcfbf20eecd296?mp_source=share"
-              >Upworks</a
-            >
-          </p>
-        </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a
-              class="text-body-secondary"
-              href="https://www.instagram.com/marchelo6308/"
-              aria-label="Instagram"
-              ><svg class="bi" width="24" height="24" aria-hidden="true">
-                <i class="bi bi-instagram"></i></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a
-              class="text-body-secondary"
-              href="https://www.facebook.com/marcelo.cartagena.37"
-              aria-label="Facebook"
-              ><svg class="bi" width="24" height="24">
-                <i class="bi bi-facebook"></i></svg
-            ></a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
